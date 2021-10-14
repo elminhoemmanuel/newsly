@@ -9,9 +9,11 @@ module.exports = {
         'hero-bg': "url('/images/farmhero.jpg')",
        }),
       colors: {
-        bexels:"#05A081",
-        bexash:"#F8F9F9",
-        nav:"#232A34"
+        purple:"#1A014E",
+        purplealt:"#9F76FB",
+        newgray:"#F8F8FD",
+        header:"#383838",
+        purplegray:"#9388AD",
       }
     },
 
