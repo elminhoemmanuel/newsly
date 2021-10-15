@@ -38,7 +38,7 @@ const TopHeader = () => {
                                                 <img className='block w-full h-72 rounded' src={articles[0].urlToImage} alt="first headline Image" /> :
                                                 <img className='block w-full h-72 rounded border border-gray-200 bg-gray-200' src="/images/placeholder.svg" alt="first headline Image placeholder" />
                                             }
-                                            <div className='img-grad absolute px-4 pt-28 pb-2 top-0 left-0 w-full h-72 rounded-md text-white'>
+                                            <div className='img-grad absolute px-4 pt-12 md:pt-16 lg:pt-28 pb-2 top-0 left-0 w-full h-72 rounded-md text-white'>
                                                 <div className="flex justify-between items-center">
                                                     <div>
                                                         {

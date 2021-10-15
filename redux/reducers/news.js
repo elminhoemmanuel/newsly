@@ -1,11 +1,12 @@
-import {  GET_NEWS, LIKE_NEWS, RESET_ERROR, SET_ERROR, START_LOAD, STOP_LOAD } from "../types";
+import {  GET_NEWS, LIKE_NEWS, RESET_ERROR, SET_ERROR, SET_NEWS, START_LOAD, STOP_LOAD } from "../types";
 
 
 const initialState = {
   articles:[],
   loading: false,
   error:"",
-  newsResponse:{}
+  newsResponse:{},
+  singleArticle:{}
 };
 
 export const newsReducer = (state = initialState, action) => {
@@ -26,6 +27,11 @@ export const newsReducer = (state = initialState, action) => {
         ...state,
         articles:action.payload.articles,
         newsResponse:action.payload,
+      };
+    case SET_NEWS:
+      return {
+        ...state,
+        singleArticle:action.payload
       };
     case START_LOAD :
       return {
