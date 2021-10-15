@@ -1,6 +1,6 @@
 <!-- Please update value in the {}  -->
 
-<h1 align="center">{Your project name}</h1>
+<h1 align="center">Newsly</h1>
 
 <div align="center">
    Solution for a challenge from  <a href="https://investondaba.notion.site/Front-End-3rd-party-data-Integration-Intermediate-Test-7d472915904e4b98b384012b7687eb31" target="_blank">daba front end intermediate coding exercise</a>.
@@ -12,7 +12,7 @@
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://newsly-pi.vercel.app">
       Solution
     </a>
     <span> | </span>
