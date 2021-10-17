@@ -8,7 +8,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://www.loom.com/share/bac4cbc90f6f4ffc93430892c1ea52a6">
       Demo
     </a>
     <span> | </span>
@@ -38,7 +38,11 @@
 
 ![screenshot](/public/images/preview.png)
 
-Introduce your projects by taking a screenshot, video recordings or a gif. Try to tell us about the solution you built by answering the following:
+
+
+- Find a demo of this web application at work [here](https://www.loom.com/share/bac4cbc90f6f4ffc93430892c1ea52a6) . 
+
+- Find a video explaining my process in deploying this web application live online [here](https://www.loom.com/share/ca8d824e5af543ab9f31a466638fe76d) . 
 
 - The live demo of this project can be found deployed live on vercel [here](https://newsly-pi.vercel.app) . However to be able to use the third party API ( News API ) given for this project for apps that are in production requires a premium plan subscription which I currently dont have as it is quite expensive, hence the live web application may not work as expected in terms of fetching the required data so I recommend using the instructions [here](#how-to-use-this-application-locally) to test project locally. 
 
