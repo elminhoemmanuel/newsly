@@ -1,16 +1,23 @@
 import React, { useState, useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
-import { getNews, like } from "../redux/actions/news"
+import { getNews, like, readMore } from "../redux/actions/news"
 import { MdMoreHoriz, MdFavoriteBorder, MdFavorite } from "react-icons/md"
+import { useRouter } from "next/router"
 
 const TopHeader = () => {
 
+    const router = useRouter();
     const dispatch = useDispatch();
     const { articles, error, loading } = useSelector((state) => state.news);
     // const [loading, setLoading] = useState(true)
 
     const getHours = () => {
         return new Date(articles[0].publishedAt).getHours()
+    }
+
+    const handleReadMore = (newsObj) =>{
+        dispatch(readMore(newsObj));
+        router.push(`/news/${newsObj.id}`)
     }
 
     useEffect(() => {
@@ -32,7 +39,7 @@ const TopHeader = () => {
                                 error === "" && articles[0] ?
 
                                     <div>
-                                        <div className='rounded relative'>
+                                        <div onClick={()=>{handleReadMore(articles[0])}} className='cursor-pointer block w-full text-left focus:outline-none rounded relative'>
                                             {
                                                 articles[0].urlToImage ?
                                                 <img className='block w-full h-72 rounded' src={articles[0].urlToImage} alt="first headline Image" /> :
