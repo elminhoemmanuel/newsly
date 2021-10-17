@@ -1,15 +1,22 @@
 import React, { useState, useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
-import { getNews, like } from "../redux/actions/news"
-import { MdMoreHoriz, MdFavoriteBorder, MdFavorite } from "react-icons/md"
+import { readMore, like } from "../redux/actions/news"
+import { MdMoreHoriz, MdFavoriteBorder, MdFavorite } from "react-icons/md";
+import { useRouter } from "next/router"
 
 const NewsCard = ({ details }) => {
 
+    const router = useRouter();
     const dispatch = useDispatch();
     const { articles, error, loading } = useSelector((state) => state.news);
 
     const getHours = (item) => {
         return new Date(item.publishedAt).getHours()
+    }
+
+    const handleReadMore = (newsObj) =>{
+        dispatch(readMore(newsObj));
+        router.push(`/news/${newsObj.id}`)
     }
 
     return (
@@ -37,7 +44,7 @@ const NewsCard = ({ details }) => {
                 </div>
             </div>
 
-            <div className="flex justify-between mb-3 ">
+            <button onClick={()=>{handleReadMore(details)}}  className="w-full text-left flex justify-between mb-3 focus:outline-none">
                 <div className="pr-4">
                     <p className="text-sm text-header mb-3 font-bold">{details.title} </p>
                     <div className="flex items-center mb-3">
@@ -51,14 +58,14 @@ const NewsCard = ({ details }) => {
                     </p>
                 </div>
 
-                <button className="block rounded-md thumb">
+                <div className="block rounded-md thumb w-60 md:w-80 h-20 md:h-auto">
                     {
                         details.urlToImage ?
                             <img className="w-full h-full rounded-md" src={details.urlToImage} alt="News Image" /> :
                             <img className="w-full h-full rounded-md border border-gray-200 bg-gray-200" src="/images/placeholder.svg" alt="News Image placeholder" />
                     }
-                </button>
-            </div>
+                </div>
+            </button>
         </div>
     )
 }

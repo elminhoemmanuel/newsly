@@ -30,34 +30,46 @@
 - [Overview](#overview)
   - [Built With](#built-with)
 - [Features](#features)
-- [How To Use](#how-to-use)
+- [How To Use this application locally](#how-to-use-this-application-locally)
 
 <!-- OVERVIEW -->
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+![screenshot](/public/images/preview.png)
 
 Introduce your projects by taking a screenshot, video recordings or a gif. Try to tell us about the solution you built by answering the following:
 
-- Where can I see your demo?
-- What was your experience building it.
+- The live demo of this project can be found deployed live on vercel [here](https://newsly-pi.vercel.app) . However to be able to use the third party API ( News API ) given for this project for apps that are in production requires a premium plan subscription which I currently dont have as it is quite expensive, hence the live web application may not work as expected in terms of fetching the required data so I recommend using the instructions [here](#how-to-use-this-application-locally) to test project locally. 
+
+
+- My experience building this web application was enlightening. It afforded me the opportunity to flex my muscles with some technologies I use frequently as well as some new libraries like moment.js ( as opposed to formatting my dates using plain javascript) and this was tasking and rewarding. I also enjoyed how I was able to manage the data fetching and storage effectively using redux
 
 ### Built With
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
 - [React](https://reactjs.org/)
-- [Vue.js](https://vuejs.org/)
-- [Tailwind](https://tailwindcss.com/)
+- [Next.js](https://nextjs.org/)
+- [Redux](https://redux.js.org/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [SASS/SCSS](https://sass-lang.com/)
+- [Vercel](https://vercel.com/) for deployment
 
 ## Features
 
 <!-- List the features of your application or follow the template. Don't share the figma file here :) -->
 
-What features did you develop?
+The Features I developed are?
 
-## How To Use
+- Fetch all top news stories based on a particular country on page load.
+- Display first news headline as top header.
+- Built the "View All" button to enable a summarized or full view of news headlines
+- Added the like/react functionality with animation
+- Setup routing to single full news page to read more about a clicked news headline.
+- Added an extra feature (not included in the required user stories) that enables user go to the original web page source of the news to read the more detailed news
+
+## How To Use this application locally
 
 <!-- Example: -->
 
@@ -65,11 +77,11 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/your-user-name/your-project-name
+$ git clone https://github.com/elminhoemmanuel/newsly.git
 
 # Install dependencies
 $ npm install
 
 # Run the app
-$ npm start
+$ npm run dev
 ```

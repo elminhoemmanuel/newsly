@@ -1,4 +1,4 @@
-import { GET_NEWS, LIKE_NEWS, RESET_ERROR, SET_ERROR, START_LOAD, STOP_LOAD } from "../types";
+import { GET_NEWS, LIKE_NEWS, RESET_ERROR, SET_ERROR, START_LOAD, STOP_LOAD, SET_NEWS } from "../types";
 import axios from 'axios'
 
 //action to fetch news articles
@@ -30,6 +30,16 @@ export const like = (id) => (dispatch) => {
     dispatch({ 
         type: LIKE_NEWS,
         payload:id 
+    })
+
+}
+
+//action to read more
+export const readMore = (news) => (dispatch) => {
+
+    dispatch({ 
+        type: SET_NEWS,
+        payload:news 
     })
 
 }
