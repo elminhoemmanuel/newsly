@@ -1,6 +1,6 @@
 <!-- Please update value in the {}  -->
 
-<h1 align="center">Newsly</h1>
+<h1 align="center">Newstify</h1>
 
 <div align="center">
    Solution for a challenge from  <a href="https://investondaba.notion.site/Front-End-3rd-party-data-Integration-Intermediate-Test-7d472915904e4b98b384012b7687eb31" target="_blank">daba front end intermediate coding exercise</a>.
@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://www.loom.com/share/4130c738f34a4a349da7fcc46187f5ec">
       Demo
     </a>
     <span> | </span>
-    <a href="https://newsly-pi.vercel.app">
+    <a href="https://newstify.vercel.app/">
       Solution
     </a>
     <span> | </span>
@@ -38,7 +38,11 @@
 
 ![screenshot](/public/images/preview.png)
 
-Introduce your projects by taking a screenshot, video recordings or a gif. Try to tell us about the solution you built by answering the following:
+
+
+- Find a demo of this web application at work [here](https://www.loom.com/share/4130c738f34a4a349da7fcc46187f5ec) . 
+
+- Find a video explaining my process in deploying this web application live online [here](https://www.loom.com/share/ca8d824e5af543ab9f31a466638fe76d) . 
 
 - The live demo of this project can be found deployed live on vercel [here](https://newsly-pi.vercel.app) . However to be able to use the third party API ( News API ) given for this project for apps that are in production requires a premium plan subscription which I currently dont have as it is quite expensive, hence the live web application may not work as expected in terms of fetching the required data so I recommend using the instructions [here](#how-to-use-this-application-locally) to test project locally. 
 

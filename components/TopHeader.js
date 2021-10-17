@@ -39,7 +39,7 @@ const TopHeader = () => {
                                 error === "" && articles[0] ?
 
                                     <div>
-                                        <div onClick={()=>{handleReadMore(articles[0])}} className='cursor-pointer block w-full text-left focus:outline-none rounded relative'>
+                                        <div  className='cursor-pointer block w-full text-left focus:outline-none rounded relative'>
                                             {
                                                 articles[0].urlToImage ?
                                                 <img className='block w-full h-72 rounded' src={articles[0].urlToImage} alt="first headline Image" /> :
@@ -56,7 +56,7 @@ const TopHeader = () => {
                                                             </p>
                                                         }
                                                     </div>
-                                                    <div><button><MdMoreHoriz className="h-6 w-6" /></button></div>
+                                                    <div><button onClick={()=>{handleReadMore(articles[0])}}><MdMoreHoriz className="h-6 w-6" /></button></div>
                                                 </div>
 
                                                 <div>
