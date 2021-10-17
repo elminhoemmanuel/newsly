@@ -1,6 +1,6 @@
 <!-- Please update value in the {}  -->
 
-<h1 align="center">Newsly</h1>
+<h1 align="center">Newstify</h1>
 
 <div align="center">
    Solution for a challenge from  <a href="https://investondaba.notion.site/Front-End-3rd-party-data-Integration-Intermediate-Test-7d472915904e4b98b384012b7687eb31" target="_blank">daba front end intermediate coding exercise</a>.
@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://www.loom.com/share/bac4cbc90f6f4ffc93430892c1ea52a6">
+    <a href="https://www.loom.com/share/4130c738f34a4a349da7fcc46187f5ec">
       Demo
     </a>
     <span> | </span>
-    <a href="https://newsly-pi.vercel.app">
+    <a href="https://newstify.vercel.app/">
       Solution
     </a>
     <span> | </span>
@@ -40,7 +40,7 @@
 
 
 
-- Find a demo of this web application at work [here](https://www.loom.com/share/bac4cbc90f6f4ffc93430892c1ea52a6) . 
+- Find a demo of this web application at work [here](https://www.loom.com/share/4130c738f34a4a349da7fcc46187f5ec) . 
 
 - Find a video explaining my process in deploying this web application live online [here](https://www.loom.com/share/ca8d824e5af543ab9f31a466638fe76d) . 
 
